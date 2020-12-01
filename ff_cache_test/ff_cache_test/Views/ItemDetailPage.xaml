@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ff_cache_test.Views.ItemDetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="{Binding Title}"
+    mc:Ignorable="d">
+
+    <StackLayout Padding="15" Spacing="20">
+
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType="ffimageloading:CachedImage">
+                    <Setter Property="Aspect" Value="AspectFill" />
+                    <Setter Property="CacheType" Value="All" />
+                    <!--<Setter Property="DownsampleToViewSize" Value="true" />-->
+                    <!--<Setter Property="HeightRequest" Value="100" />-->
+                    <Setter Property="HorizontalOptions" Value="Fill" />
+                    <!--<Setter Property="CustomKeyPrefix" Value="w30p" />
+                    <Setter Property="CustomKeyPrefix" Value="w100p" />-->
+                    <Setter Property="VerticalOptions" Value="Fill" />
+                    <Setter Property="Aspect" Value="AspectFit" />
+                    <!--<Setter Property="WidthRequest" Value="100" />-->
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+
+        <Grid ColumnDefinitions="*,*" RowDefinitions="200,200">
+            <ffimageloading:CachedImage
+                x:Name="m0"
+                Grid.Row="0"
+                Grid.Column="0"
+                Finish="OnFinish"
+                Source="{Binding Item.Image0}"
+                Success="OnSuccess" />
+
+
+            <ffimageloading:CachedImage
+                x:Name="m1"
+                Grid.Row="0"
+                Grid.Column="1"
+                Finish="OnFinish"
+                Source="{Binding Item.Image1}"
+                Success="OnSuccess" />
+
+            <ffimageloading:CachedImage
+                x:Name="m2"
+                Grid.Row="1"
+                Grid.Column="0"
+                Finish="OnFinish"
+                Source="{Binding Item.Image2}"
+                Success="OnSuccess" />
+
+
+            <ffimageloading:CachedImage
+                x:Name="m3"
+                Grid.Row="1"
+                Grid.Column="1"
+                Finish="OnFinish"
+                Source="{Binding Item.Image3}"
+                Success="OnSuccess" />
+        </Grid>
+
+
+
+        <Label FontSize="Medium" Text="Timings:" />
+        <Label
+            x:Name="times"
+            FontSize="14"
+            Text="" />
+    </StackLayout>
+
+</ContentPage>

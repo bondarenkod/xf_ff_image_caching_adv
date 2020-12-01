@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ff_cache_test.Views.ItemsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="BrowseItemsPage"
+    Title="{Binding Title}"
+    mc:Ignorable="d">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="AddItem_Clicked" Text="Add" />
+    </ContentPage.ToolbarItems>
+
+    <Grid RowDefinitions="Auto, *">
+
+        <StackLayout>
+            <Button Clicked="cache_Clicked" Text="Cache images" />
+            <Button Clicked="clearCache_Clicked" Text="Clear All Cache" />
+            <Button Clicked="Disk_Clicked" Text="Clear Disk Cache" />
+            <Button Clicked="Mem_Clicked" Text="Clear Memory Cache" />
+            <Label x:Name="output" />
+        </StackLayout>
+
+        <RefreshView
+            Grid.Row="1"
+            Command="{Binding LoadItemsCommand}"
+            IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+            <CollectionView x:Name="ItemsCollectionView" ItemsSource="{Binding Items}">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label
+                                d:Text="{Binding .}"
+                                FontSize="16"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemTextStyle}"
+                                Text="{Binding Text, Mode=OneTime}" />
+                            <Label
+                                d:Text="Item descripton"
+                                FontSize="13"
+                                LineBreakMode="NoWrap"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                Text="{Binding Description}" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnItemSelected" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+
+
+</ContentPage>
