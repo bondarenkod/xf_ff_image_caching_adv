@@ -68,9 +68,9 @@ namespace FFImageLoading.Forms.Sample
                     TransformPlaceholders = true,
                     LoadingPlaceholder = "loading.png",
                     ErrorPlaceholder = "error.png",
-                    Transformations = new List<Work.ITransformation>() {
-                        new CornersTransformation(50, CornerTransformType.RightRounded)
-                    },
+                    //Transformations = new List<Work.ITransformation>() {
+                    //    new CornersTransformation(50, CornerTransformType.RightRounded)
+                    //},
                     LoadingDelay = 50,
                 };
 
@@ -83,9 +83,9 @@ namespace FFImageLoading.Forms.Sample
                     TransformPlaceholders = true,
                     LoadingPlaceholder = "loading.png",
                     ErrorPlaceholder = "error.png",
-                    Transformations = new List<Work.ITransformation>() {
-                        new GrayscaleTransformation()
-                    },
+                    //Transformations = new List<Work.ITransformation>() {
+                    //    new GrayscaleTransformation()
+                    //},
                     LoadingDelay = 50,
                 };
 

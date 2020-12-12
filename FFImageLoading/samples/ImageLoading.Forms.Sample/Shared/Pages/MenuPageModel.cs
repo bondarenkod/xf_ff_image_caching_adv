@@ -7,7 +7,6 @@ using FFImageLoading.Forms.Sample;
 using Xamarin.Forms;
 using Xamvvm;
 using FFImageLoading.Forms.Sample.Pages;
-using FFImageLoading.Forms.Sample.Pages.Transformations;
 
 namespace FFImageLoading.Forms.Sample
 {
@@ -131,160 +130,160 @@ namespace FFImageLoading.Forms.Sample
                 //	})
                 //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "ColorFillTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<ColorFillTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "ColorFillTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<ColorFillTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "CropTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<CropTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "CropTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<CropTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "RotateTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<RotateTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "RotateTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<RotateTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "CircleTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<CircleTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "CircleTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<CircleTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "RoundedTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<RoundedTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "RoundedTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<RoundedTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "CornersTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<CornersTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "CornersTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<CornersTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "GrayscaleTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<GrayscaleTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "GrayscaleTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<GrayscaleTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "BlurredTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<BlurredTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "BlurredTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<BlurredTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "SepiaTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<SepiaTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "SepiaTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<SepiaTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "ColorSpaceTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<ColorSpaceTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "ColorSpaceTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<ColorSpaceTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "TintTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<TintTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "TintTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<TintTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "FlipTransformation",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<FlipTransformationPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "FlipTransformation",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<FlipTransformationPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "Transformations",
-                    Title = "Multiple transformations example",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<MultipleTransformationsPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "Transformations",
+                //    Title = "Multiple transformations example",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<MultipleTransformationsPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem()
-                {
-                    Section = "Transformations",
-                    Title = "Transformations selector example",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<TransformationsSelectorPageModel>(pm => pm.Reload());
-                    })
+                //new MenuItem()
+                //{
+                //    Section = "Transformations",
+                //    Title = "Transformations selector example",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<TransformationsSelectorPageModel>(pm => pm.Reload());
+                //    })
 
-                },
+                //},
 
-                new MenuItem() {
-                    Section = "File formats",
-                    Title = "Simple SVG example",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<SvgSamplePageModel>();
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "File formats",
+                //    Title = "Simple SVG example",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<SvgSamplePageModel>();
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "File formats",
-                    Title = "Heavy SVG List example",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<SvgListHeavyPageModel>(pm => pm.Reload());
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "File formats",
+                //    Title = "Heavy SVG List example",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<SvgListHeavyPageModel>(pm => pm.Reload());
+                //    })
+                //},
 
-                new MenuItem() {
-                    Section = "File formats",
-                    Title = "SVG replace map example",
-                    Command = new BaseCommand(async (param) =>
-                    {
-                        await this.PushPageFromCacheAsync<SvgReplacePageModel>();
-                    })
-                },
+                //new MenuItem() {
+                //    Section = "File formats",
+                //    Title = "SVG replace map example",
+                //    Command = new BaseCommand(async (param) =>
+                //    {
+                //        await this.PushPageFromCacheAsync<SvgReplacePageModel>();
+                //    })
+                //},
 
                 new MenuItem()
                 {

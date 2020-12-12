@@ -20,12 +20,12 @@
     <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;ANDROID;__ANDROID__</DefineConstants>         
+    <DefineConstants>DEBUG;ANDROID;__ANDROID__</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <ConsolePause>false</ConsolePause>
-    <DefineConstants>DEBUG;ANDROID;__ANDROID__</DefineConstants>         
+    <DefineConstants>DEBUG;ANDROID;__ANDROID__</DefineConstants>
     <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -38,7 +38,7 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
     <DocumentationFile>bin\Release\FFImageLoading.Platform.xml</DocumentationFile>
-    <DefineConstants>ANDROID;__ANDROID__</DefineConstants>                 
+    <DefineConstants>ANDROID;__ANDROID__</DefineConstants>
     <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -54,7 +54,6 @@
     <Reference Include="Java.Interop" />
   </ItemGroup>
   <Import Project="..\FFImageLoading.Shared\FFImageLoading.Shared.projitems" Label="Shared" Condition="Exists('..\FFImageLoading.Shared\FFImageLoading.Shared.projitems')" />
-  <Import Project="..\FFImageLoading.Cross\FFImageLoading.Cross.projitems" Label="Shared" Condition="Exists('..\FFImageLoading.Cross\FFImageLoading.Cross.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Cache\ImageCache.cs" />
@@ -116,7 +115,5 @@
       <Name>FFImageLoading</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Decoders\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

@@ -135,14 +135,31 @@
     <PackageReference Include="System.Net.Http">
       <Version>4.3.4</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.FFImageLoading.Forms">
-      <Version>2.4.11.982</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1364" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Common\FFImageLoading.csproj">
+      <Project>{0ee1691c-3956-435c-bf2a-3c622b0a1ae9}</Project>
+      <Name>FFImageLoading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Forms.Touch\FFImageLoading.Forms.Touch.csproj">
+      <Project>{1e70a5af-aafa-4247-8afe-39cda73ebcec}</Project>
+      <Name>FFImageLoading.Forms.Touch</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Forms\FFImageLoading.Forms.csproj">
+      <Project>{e7dcac20-7ebb-4cef-9fac-8385cf7d0691}</Project>
+      <Name>FFImageLoading.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj">
+      <Project>{1597f7d4-432c-4f26-b508-0f6faf0b9711}</Project>
+      <Name>FFImageLoading.Touch</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
     <ProjectReference Include="..\ff_cache_test\ff_cache_test.csproj">
       <Project>{6300048F-68A1-4D09-8F7C-1A7A33481B7E}</Project>
       <Name>ff_cache_test</Name>

@@ -47,7 +47,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FFImageLoading.Common\FFImageLoading.csproj" />
-    <ProjectReference Include="..\FFImageLoading.Windows\FFImageLoading.Windows.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\FFImageLoading.Transformations\CornerTransformType.cs">

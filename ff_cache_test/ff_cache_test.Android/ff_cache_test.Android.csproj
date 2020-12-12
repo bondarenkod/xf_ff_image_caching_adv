@@ -57,10 +57,7 @@
     <PackageReference Include="System.Net.Http">
       <Version>4.3.4</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.FFImageLoading.Forms">
-      <Version>2.4.11.982</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1364" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +90,22 @@
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Common\FFImageLoading.csproj">
+      <Project>{0ee1691c-3956-435c-bf2a-3c622b0a1ae9}</Project>
+      <Name>FFImageLoading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Droid\FFImageLoading.Droid.csproj">
+      <Project>{74bf9402-3e13-4003-8923-bc20a1294ce2}</Project>
+      <Name>FFImageLoading.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Forms.Droid\FFImageLoading.Forms.Droid.csproj">
+      <Project>{7014feb6-0338-4a47-b600-4a1b48127c5c}</Project>
+      <Name>FFImageLoading.Forms.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\FFImageLoading\source\FFImageLoading.Forms\FFImageLoading.Forms.csproj">
+      <Project>{e7dcac20-7ebb-4cef-9fac-8385cf7d0691}</Project>
+      <Name>FFImageLoading.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ff_cache_test\ff_cache_test.csproj">
       <Project>{6300048F-68A1-4D09-8F7C-1A7A33481B7E}</Project>
       <Name>ff_cache_test</Name>

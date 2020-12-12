@@ -20,7 +20,7 @@
     <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>        
+    <ConsolePause>false</ConsolePause>
     <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <DocumentationFile>bin\Release\FFImageLoading.Platform.xml</DocumentationFile>
-    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__</DefineConstants>                
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__</DefineConstants>
     <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -46,8 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Targets\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +62,6 @@
     <Compile Include="Targets\UIImageTarget.cs" />
   </ItemGroup>
   <Import Project="..\FFImageLoading.Shared.IosMac\FFImageLoading.Shared.IosMac.projitems" Label="Shared" Condition="Exists('..\FFImageLoading.Shared.IosMac\FFImageLoading.Shared.IosMac.projitems')" />
-  <Import Project="..\FFImageLoading.Cross\FFImageLoading.Cross.projitems" Label="Shared" Condition="Exists('..\FFImageLoading.Cross\FFImageLoading.Cross.projitems')" />
   <Import Project="..\FFImageLoading.Shared\FFImageLoading.Shared.projitems" Label="Shared" Condition="Exists('..\FFImageLoading.Shared\FFImageLoading.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ProjectExtensions>

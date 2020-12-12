@@ -168,10 +168,6 @@
       <Project>{399e7e28-5a3d-471f-b6fc-d5770ebb6762}</Project>
       <Name>FFImageLoading.Transformations.Windows</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\source\FFImageLoading.Windows\FFImageLoading.Windows.csproj">
-      <Project>{610543a5-d06f-4bca-9443-e6addff06c71}</Project>
-      <Name>FFImageLoading.Windows</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Shared\FFImageLoading.Forms.Sample.csproj">
       <Project>{3a682234-5918-4f58-b02b-598a59c6a7bd}</Project>
       <Name>FFImageLoading.Forms.Sample</Name>

@@ -46,6 +46,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FFImageLoading.Forms\FFImageLoading.Forms.csproj" />
-    <ProjectReference Include="..\FFImageLoading.Tizen\FFImageLoading.Tizen.csproj" />
   </ItemGroup>
 </Project>

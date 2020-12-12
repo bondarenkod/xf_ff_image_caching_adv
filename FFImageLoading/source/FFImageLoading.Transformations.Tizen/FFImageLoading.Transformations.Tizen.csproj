@@ -30,7 +30,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FFImageLoading.Common\FFImageLoading.csproj" />
-    <ProjectReference Include="..\FFImageLoading.Tizen\FFImageLoading.Tizen.csproj" />
   </ItemGroup>
 
 </Project>

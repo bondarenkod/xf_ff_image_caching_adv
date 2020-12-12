@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace FFImageLoading.Helpers.Gif
 {
-	public abstract class GifHelperBase<TNativeImageContainer> : IDisposable
+	public abstract class GifHelperBase<TNativeImageContainer> : IDisposable where TNativeImageContainer : class
 	{
 #pragma warning disable IDE1006 // Naming Styles
 		private const int MAX_STACK_SIZE = 4 * 1024;
@@ -36,8 +36,8 @@ namespace FFImageLoading.Helpers.Gif
 
 		public int Width => _header.Width;
 		public int Height => _header.Height;
-        protected Stream Data { get; private set; }
-        public GifDecodeStatus Status { get; private set; }
+		protected Stream Data { get; private set; }
+		public GifDecodeStatus Status { get; private set; }
 		public int DownsampledHeight { get; private set; }
 		public int DownsampledWidth { get; private set; }
 		public bool? IsFirstFrameTransparent { get; private set; }
@@ -97,9 +97,9 @@ namespace FFImageLoading.Helpers.Gif
 
 		public int FrameCount => _header.FrameCount;
 
-        public int CurrentFrameIndex { get; private set; }
+		public int CurrentFrameIndex { get; private set; }
 
-        public void ResetFrameIndex()
+		public void ResetFrameIndex()
 		{
 			CurrentFrameIndex = INITIAL_FRAME_POINTER;
 		}
