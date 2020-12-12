@@ -66,7 +66,7 @@ namespace ff_cache_test.Views
 
         private void UpdateOut()
         {
-            Dispatcher.BeginInvokeOnMainThread(() =>
+            Device.BeginInvokeOnMainThread(() =>
             {
                 string get(string name, (TimeSpan finish, TimeSpan success, bool failed) a)
                 {

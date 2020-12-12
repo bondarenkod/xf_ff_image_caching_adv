@@ -135,6 +135,10 @@
     <BundleResource Include="Resources\ic_star_black_24dp%403x.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ff_cache_test\ff_cache_test\ff_cache_test.csproj">
+      <Project>{733bc914-03be-4f61-9cb0-abd61fe814a3}</Project>
+      <Name>ff_cache_test</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shared\FFImageLoading.Forms.Sample.csproj">
       <Project>{3A682234-5918-4F58-B02B-598A59C6A7BD}</Project>
       <Name>FFImageLoading.Forms.Sample</Name>

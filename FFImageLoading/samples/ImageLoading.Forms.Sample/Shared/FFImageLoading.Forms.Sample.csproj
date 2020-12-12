@@ -23,6 +23,7 @@
         <PackageReference Include="Xamvvm.Forms" Version="1.0.5" />
     </ItemGroup>
     <ItemGroup>
+        <ProjectReference Include="..\..\..\..\ff_cache_test\ff_cache_test\ff_cache_test.csproj" />
         <ProjectReference Include="..\..\..\source\FFImageLoading.Common\FFImageLoading.csproj" />
         <ProjectReference Include="..\..\..\source\FFImageLoading.Forms\FFImageLoading.Forms.csproj" />
         <ProjectReference Include="..\..\..\source\FFImageLoading.Forms.Mock\FFImageLoading.Forms.Mock.csproj" />

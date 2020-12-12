@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace ff_cache_test.ViewModels
@@ -10,7 +9,7 @@ namespace ff_cache_test.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://xamarin.com"));
+            OpenWebCommand = new Command(async () => { /*await Browser.OpenAsync("https://xamarin.com")*/});
         }
 
         public ICommand OpenWebCommand { get; }
